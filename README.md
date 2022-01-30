@@ -1,7 +1,5 @@
-# 第六课作业
+1. 编译benchmark：
+```shell 
+./target/release/node-template benchmark --chain dev --execution=wasm --wasm-execution=compiled --pallet=pallet_template --extrinsic do_something --steps 2 --repeat 50
+```
 
-![](https://i.imgur.com/0oOpjZf.jpg)
-![](https://imgur.com/SffKJkV.jpg)
-![](https://i.imgur.com/GSpdkb4.png)
-![](https://i.imgur.com/GrGYY4X.png)
-![](https://imgur.com/ZP9Ge7y.png)
