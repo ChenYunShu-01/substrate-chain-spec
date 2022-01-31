@@ -3,7 +3,7 @@
 cargo build --release --features runtime-benchmarks
 ```
 
-2. run benchmark test 
+2. Run benchmark test 
 ```shell 
 ./target/release/node-template benchmark --chain dev --execution=wasm --wasm-execution=compiled --pallet=pallet_template --extrinsic do_something --steps 2 --repeat 50
 ```
