@@ -1,16 +1,21 @@
-1. 编译benchmark：  
+1. Compile benchmark 
+```shell 
+cargo build --release --features runtime-benchmarks
+```
+
+2. run benchmark test 
 ```shell 
 ./target/release/node-template benchmark --chain dev --execution=wasm --wasm-execution=compiled --pallet=pallet_template --extrinsic do_something --steps 2 --repeat 50
 ```
 
-2. 生成chain-spec  
+3. Generate chain-spec.json  
 ```shell 
 ./target/release/node-template build-spec > chain-spec-plain.json
 ./target/release/node-template build-spec --chain chain-spec-plain.json --raw --disable-default-bootnode > no-bootnodes-chain-spec-plain.json
 ./target/release/node-template build-spec --chain chain-spec-plain.json --raw > chain-spec.json
 ```
 
-3. 启动节点：  
+4. Launch local node  
 ```shell 
 ./target/release/node-template \
 --base-path /tmp/node01 \
